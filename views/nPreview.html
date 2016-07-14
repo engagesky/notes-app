@@ -1,0 +1,8 @@
+<div ng-show="note">
+  <button class="btn btn-default" ng-click="deleteNote()">Delete Note</button>
+  <div>
+    <h1><a href="#" editable-text="notes[noteindex].title" onbeforesave="updateNoteTitle(noteindex, $data)">{{notes[noteindex].title || "Untitled"}}</a></h1>
+    <br>
+    <p class="markdown_preview" markdown-to-html="note[0].$value"></p>
+  </div>
+</div>

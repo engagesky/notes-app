@@ -1,0 +1,18 @@
+<div uib-dropdown>
+  <img class="n-profile-gravatar cursor-pointer" role="dropdown" ng-src="{{user.email | gravatar}}" uib-dropdown-toggle>
+  <ul class="dropdown-menu pull-right" uib-dropdown-menu>
+    <!-- <li role="menuitem" class="disabled">
+      <a href class="disabled-link" disabled>Your Profile (coming soon)</a>
+    </li> -->
+    <li role="menuitem">
+      <a class="typeform-share link" href="https://engageskynotes.typeform.com/to/vLf4GB" data-mode="1" target="_blank">Report Problems</a>
+<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
+    </li>
+    <li class="divider"></li>
+    <li role="menuitem" ng-click="signOut()">
+      <a href>
+        <span class="text-danger">Sign-out</span>
+      </a>
+    </li>
+  </ul>
+</div>

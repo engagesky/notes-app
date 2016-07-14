@@ -1,0 +1,26 @@
+<!-- CREATE DIALOG -->
+<form ng-show="createnote">
+  <div class="modal-header">
+    <h3 class="modal-title">Add Note</h3>
+  </div>
+  <div class="modal-body">
+    <input type="text" placeholder="Title*" ng-model="note_title" required="required" focus-on="isOpen">
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-default" ng-click="cancel()">Cancel</button>
+    <button type="button" class="btn btn-primary" ng-click="create()">Add Note</button>
+  </div>
+</form>
+<!-- DELETE DIALOG -->
+<form ng-show="deletenote">
+  <div class="modal-header">
+    <h3 class="modal-title text-red">Delete Note</h3>
+  </div>
+  <div class="modal-body">
+    This operation cannot be undone.
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-default" ng-click="cancel()">Cancel</button>
+    <button type="button" class="btn btn-danger" ng-click="delete()">Delete Note</button>
+  </div>
+</form>

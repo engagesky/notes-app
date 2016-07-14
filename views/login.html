@@ -1,0 +1,17 @@
+
+<!-- Log-in -->
+<div style="background: #2FBA68; width: 100%; height: 100%; position: absolute;">
+  <div class="container" style="max-width: 640px;">
+    <div style="text-align: center;">
+      <img src="img/logobeta.png" style="width: 214px; padding: 40px 0;">
+    </div>
+    <div class="animated fadeInUp" style="background: white; border-radius: 8px; padding: 10px 15px;">
+      <form method="post">
+        <input type="email" id="email" name="email" ng-model="signin.email" placeholder="Email" required>
+        <input type="password" id="password" name="password" ng-model="signin.password" placeholder="Password" autocomplete="off">
+        <input type="submit" class="btn-lg btn-primary" id="quickstart-sign-in" name="signin" value="Log-in" ng-disabled="allowsignin" ng-click="toggleSignIn()">
+        <p ng-show="login_error" class="bg-danger">{{login_error}}</p>
+      </form>
+    </div>
+  </div>
+</div>

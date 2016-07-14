@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="notes">
+  <head>
+    <meta charset="utf-8">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!-- Responsive -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+    <title>Notes</title>
+    <link rel="icon" type="image/png" href="img/favicons/favicon.ico">
+
+    <!-- iOS specific -->
+    <link rel="apple-touch-icon" href="img/favicons/60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/76x76.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/152x152.png">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- UTILS -->
+    <script type="text/javascript" src="scripts.js"></script>
+  </head>
+  <body ng-controller="MainCtrl" ng-cloak ng-class="{'n-login-bg': login}">
+    <!-- UI-VIEWS -->
+    <header ui-view="nav" ng-cloak></header>
+    <main ui-view ng-cloak></main>
+  </body>
+</html>

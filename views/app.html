@@ -1,0 +1,18 @@
+<n-nav ng-class="{'start':note}"></n-nav>
+<div id="appcontainer" ng-show="notes.length" data-split-pane style="margin-top: 48px; position: relative;">
+	<div data-split-pane-component data-width="20%">
+    <n-listview class="n-listview" ng-class="{'empty':!notes.length}"></n-listview>
+  </div>
+	<div data-split-pane-divider data-width="8px"></div>
+  <div data-split-pane-component>
+		<textarea n-editor id="myID" ng-model="note[0].$value"></textarea>
+  </div>
+</div>
+<table ng-hide="notes.length" style="width: 100%; height: 100%; margin-top: 48px; margin-bottom: -48px;">
+  <tr>
+    <td style="width: 100%; height: 100%; text-align: center;">
+      <p ng-hide="notes.length">Hey, it seems you don't have any notes yet...</p>
+      <button class="btn-lg btn-primary" ng-click="createDialog()">Create your first Note</button>
+    </td>
+  </tr>
+</table>
