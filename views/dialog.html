@@ -1,5 +1,5 @@
 <!-- CREATE DIALOG -->
-<form ng-show="createnote">
+<form ng-show="createnote" ng-submit="create()">
   <div class="modal-header">
     <h3 class="modal-title">Add Note</h3>
   </div>
@@ -8,7 +8,7 @@
   </div>
   <div class="modal-footer">
     <button type="button" class="btn btn-default" ng-click="cancel()">Cancel</button>
-    <button type="button" class="btn btn-primary" ng-click="create()">Add Note</button>
+    <input type="submit" class="btn btn-primary" style="width: auto;" value="Add Note">
   </div>
 </form>
 <!-- DELETE DIALOG -->
