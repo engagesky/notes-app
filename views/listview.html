@@ -1,9 +1,11 @@
-<ul class="reset">
-  <li>
-    <button class="btn btn-default" ng-click="createDialog()" style="width:100%"><i class="fa fa-plus" aria-hidden="true"></i> Add Note</button>
-  </li>
-  <li class="n-listview-note" ng-repeat="note in notes | orderBy: 'date':true" ng-click="loadNote(note.note, (notes.length - $index - 1))" ng-class="{active: (notes.length - $index - 1) === noteindex}">
-    <div class="title">{{note.title}}</div>
-    <div class="date"><small>{{note.date | momentTimeStamp}}</small></div>
-  </li>
-</ul>
+<div class="n-listview-container">
+  <ul class="reset">
+    <li>
+      <button class="btn btn-default" ng-click="createDialog()" style="width:100%"><i class="fa fa-plus" aria-hidden="true"></i> Add Note</button>
+    </li>
+    <li class="n-listview-note" ng-repeat="note in notes | orderBy: 'date':true" ng-click="loadNote(note.note, (notes.length - $index - 1))" ng-class="{active: (notes.length - $index - 1) === noteindex}">
+      <div class="title">{{note.title}}</div>
+      <div class="date"><small>{{note.date | momentTimeStamp}}</small></div>
+    </li>
+  </ul>
+</div>

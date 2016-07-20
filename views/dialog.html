@@ -1,5 +1,5 @@
 <!-- CREATE DIALOG -->
-<form ng-show="createnote" ng-submit="create()">
+<form ng-submit="create()" ng-class="{'hidden' : !createnote}">
   <div class="modal-header">
     <h3 class="modal-title">Add Note</h3>
   </div>
@@ -12,7 +12,7 @@
   </div>
 </form>
 <!-- DELETE DIALOG -->
-<form ng-show="deletenote">
+<form ng-class="{'hidden' : !deletenote}">
   <div class="modal-header">
     <h3 class="modal-title text-red">Delete Note</h3>
   </div>
